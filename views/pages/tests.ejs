@@ -31,6 +31,7 @@
                             <p>
                                 To create a test, you must first have a JSON file structured for test creation. 
                                 You can either upload a JSON file or write one now.
+                                Please only fill out the form you are going to use, not both.
                             </p>
 
                             <!-- Tabs navigation -->
@@ -48,35 +49,40 @@
                                 <!-- Upload JSON tab -->
                                 <div class="tab-pane fade show active" id="upload-tab-pane" role="tabpanel" aria-labelledby="upload-tab">
                                     <!-- Upload form goes here -->
-                                    <div class="mb-3">
-                                        <label for="titleInput" class="form-label">Test Name</label>
-                                        <input type="email" class="form-control" id="titleInput" placeholder="My Cactusbook Test">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="formFile" class="form-label">Test Q&A JSON (File)</label>
-                                        <input class="form-control" type="file" id="formFile">
-                                    </div>                                      
+                                    <form action="/validate" method="post">
+                                        <div class="mb-3">
+                                            <label for="titleInput" class="form-label">Test Name</label>
+                                            <input type="text" class="form-control" id="titleInput" name="titleInput" placeholder="My Cactusbook Test">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Test Q&A JSON (File)</label>
+                                            <input class="form-control" type="file" id="formFile" name="formFile">
+                                        </div>
+                                        <button class="btn btn-primary form-control" type="submit">Continue to Test Details</button>
+                                    </form>
                                 </div>
 
                                 <!-- Write JSON tab -->
                                 <div class="tab-pane fade" id="write-tab-pane" role="tabpanel" aria-labelledby="write-tab">
                                     <!-- Write JSON form goes here -->
-                                    <div class="mb-3">
-                                        <label for="titleInput" class="form-label">Test Name</label>
-                                        <input type="email" class="form-control" id="titleInput" placeholder="My Cactusbook Test">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Test Q&A JSON</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                                    </div>
+                                    <form action="/validate" method="post">
+                                        <div class="mb-3">
+                                            <label for="titleInput" class="form-label">Test Name</label>
+                                            <input type="text" class="form-control" id="titleInput" name="titleInput" placeholder="My Cactusbook Test">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formText" class="form-label">Test Q&A JSON</label>
+                                            <textarea class="form-control" id="formText" name="formText" rows="6"></textarea>
+                                        </div>
+                                        <button class="btn btn-primary form-control" type="submit">Continue to Test Details</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save Test</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel Test Creation</button>
                         </div>
                     </div>
                 </div>
@@ -85,5 +91,6 @@
 
         <!-- Bootstrap JS bundle -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="/public/javascript/index.js"></script>
     </body>
 </html>

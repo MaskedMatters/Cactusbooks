@@ -7,9 +7,16 @@
         <header><%- include('../partials/header'); %></header>
 
         <main>
-            <p>There is nothing in settings and there will be nothing for a pretty long time. At least after 0.1.0alpha-d you have to wait.</p>
+            
+            <form action="/tests"><button type="submit" class="btn btn-link">&lt-- BACK</button></form>
+
+            <h1>Test Details & Info</h1>
+            <p>Make sure all of the info is correct.</p>
+
+            <p>Test Title: <%= testTitle %></p>
+            <p>Test JSON: <%= testJSON %></p>
+
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
     </body>
 </html>
