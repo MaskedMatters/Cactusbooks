@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg bg-primary-subtle rounded">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            <img class="rounded" src="/public/images/Cactusbook-Logo.png" alt="Logo" height="24" class="d-inline-block align-text-top">
+            Cactusbook
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                
+                <a class="nav-link <%= curPage === 'dashboard' ? 'active' : '' %>" 
+                    aria-current="<%= curPage === 'dashboard' ? 'page' : '' %>" 
+                    href="/">Dashboard</a>
+                 
+                 <a class="nav-link <%= curPage === 'tests' ? 'active' : '' %>" 
+                    aria-current="<%= curPage === 'tests' ? 'page' : '' %>" 
+                    href="/tests">Tests</a>
+                 
+                 <a class="nav-link <%= curPage === 'settings' ? 'active' : '' %>" 
+                    aria-current="<%= curPage === 'settings' ? 'page' : '' %>" 
+                    href="/settings">Settings</a>
+                 
+                 <a class="nav-link <%= curPage === 'globals' ? 'active' : '' %>" 
+                    aria-current="<%= curPage === 'globals' ? 'page' : '' %>" 
+                    href="/globals">Globals</a>
+                 
+                 <a class="nav-link disabled" aria-disabled="true">Hosting (Coming Soon)</a>
+                 
+
+            </div>
+        </div>
+
+    </div>
+</nav>

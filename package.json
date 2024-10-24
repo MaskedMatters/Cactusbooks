@@ -1,0 +1,27 @@
+{
+  "name": "securetestingtester",
+  "version": "1.0.0",
+  "description": "A cool thing that's cool and check the GitHub...",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaskedMatters/SecureTestingTester.git"
+  },
+  "author": "M. West",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaskedMatters/SecureTestingTester/issues"
+  },
+  "homepage": "https://github.com/MaskedMatters/SecureTestingTester#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
