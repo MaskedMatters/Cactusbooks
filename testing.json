@@ -1,0 +1,54 @@
+[
+    {
+        "time": 25.5,
+        "isBreak": false,
+        "name": "ExampleName",
+        "questions": [
+            {
+                "question": "What is the speed of light?",
+                "type": "multchoice",
+                "answers": ["c^2", "idk"],
+                "correct": ["c", "light"]
+            },
+            {
+                "question": "What is Einstein's famous equation?",
+                "type": "freeres",
+                "correct": ["e=mc^2"]
+            },
+            {
+                "question": "What is my name?",
+                "type": "multchoice",
+                "answers": ["Bob", "Derek", "Larry"],
+                "correct": ["Matthew"]
+            }
+        ]
+    },
+    {
+        "time": 10,
+        "isBreak": true
+    },
+    {
+        "time": 25.5,
+        "isBreak": false,
+        "name": "ExampleName",
+        "questions": [
+            {
+                "question": "New Question",
+                "type": "multchoice",
+                "answers": ["a", "b"],
+                "correct": ["c", "d"]
+            },
+            {
+                "question": "WHwiefhuiwheg hashfiawed",
+                "type": "freeres",
+                "correct": ["abcd"]
+            },
+            {
+                "question": "Wooohaaaa",
+                "type": "multchoice",
+                "answers": ["a", "b", "c"],
+                "correct": ["d"]
+            }
+        ]
+    }
+]

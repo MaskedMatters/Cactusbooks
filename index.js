@@ -3,7 +3,7 @@ let express = require('express');
 let app = express();
 
 // Express explode public folder as public and use Express built-in body parser
-app.use('/public', express.static('publr4ic'));
+app.use('/public', express.static('public'));
 app.use(express.urlencoded({ extended: true })); // This lets the post method work
 
 // Set view engine to EJS
@@ -30,8 +30,8 @@ app.get('/globals', (req, res) => {
 })
 
 app.get('/testdetails', (req, res) => {
-    let title = req.query.title
-    let json = req.query.jsonText
+    let title = decodeURIComponent(req.query.title)
+    let json = decodeURIComponent(req.query.jsonText)
 
     res.render('pages/testdetails', { testTitle: title, testJSON: json, curPage: "tests" })
 })
