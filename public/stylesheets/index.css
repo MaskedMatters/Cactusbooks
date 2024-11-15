@@ -1,16 +1,3 @@
-/* IMPORT GOOGLE FONTS - Roboto, Raleway */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.center {
-    text-align: center;
-}
-
 .minitron {
     display: flex;
     flex-direction: row;
@@ -41,6 +28,7 @@ body {
     padding: 12px 24px; 
     font-size: 16px; 
     font-weight: bold; 
+    text-decoration: none;
     color: white;
     background-color: #007bff; 
     border: none;
@@ -51,20 +39,4 @@ body {
 
 .cta-button:hover {
     background-color: #0056b3; /* Darker shade on hover */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse; /* Collapse borders for a cleaner look */
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid #ddd; /* Light gray border for table cells */
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2; /* Slightly darker background for table header */
 }

@@ -10,9 +10,13 @@ app.set('view engine', 'ejs');
 
 // Index/Home page
 app.get('/', (req, res) => {
-    res.render('pages/tests');
-})
+    res.render('pages/index');
+});
+
+app.get('/creation', (req, res) => {
+    res.render('pages/create');
+});
 
 app.listen(3000, () => {
     console.log("The server started successfully... YES!")
-})
+});
