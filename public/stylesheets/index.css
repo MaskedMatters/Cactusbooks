@@ -7,7 +7,7 @@
 }
 
 .ad-container {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
     border-radius: 10px;
     flex: 4;
     padding: 20px; /* Add some padding for buffer */
@@ -15,7 +15,7 @@
 
 .cta-container { 
     flex: 1; 
-    background-color: #f0f0f0; 
+    background-color: #f9f9f9; 
     padding: 20px;
     border-radius: 10px;
     text-align: center; 

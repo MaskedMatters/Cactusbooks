@@ -21,7 +21,7 @@
                 
                 <hr><br>
                 
-                <form>
+                <form action="/validator" method="post">
                     <label for="testTitle">Test Title:</label>
                     <input type="text" id="testTitle" name="testTitle" required>
 
@@ -31,16 +31,26 @@
                     <hr style="width: 50%;">
 
                     <label for="testJSON">Test JSON Format:</label>
-                    <textarea id="testJSON" name="testJSON" rows="8" required></textarea>
+                    <textarea id="testJSON" name="testJSON" rows="22" required></textarea>
 
                     <label for="testPledge">Test Pledge:</label>
                     <textarea id="testPledge" name="testPledge" rows="5" disabled></textarea>
 
                     <label for="activatePledge"><input type="checkbox" id="activatePledge" name="activatePledge"> Press this to activate pledge</label><br>
-              
+
+                    <div class="bottom-bar">
+                        <div class="bar-text">
+                            <span>Make sure all values are correct.</span>
+                        </div>
+                        <div class="bar-buttons">
+                            <button class="cancel-button">Cancel</button>
+                            <button type="submit" class="submit-button">Create</button>
+                        </div>
+                    </div>
                  </form>
 
             </div>
         </main>
+        <script src="/public/javascript/index.js"></script>
     </body>
 </html>

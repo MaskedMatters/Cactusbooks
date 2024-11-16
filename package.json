@@ -2,10 +2,10 @@
   "name": "securetestingtester",
   "version": "1.0.0",
   "description": "A cool thing that's cool and check the GitHub...",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
