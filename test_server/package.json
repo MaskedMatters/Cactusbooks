@@ -1,0 +1,24 @@
+{
+  "name": "cactusbooks-server",
+  "version": "1.0.0",
+  "description": "The Cactusbooks server holds the information for the ongoing test.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaskedMatters/Cactusbooks.git"
+  },
+  "author": "M. West",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaskedMatters/Cactusbooks/issues"
+  },
+  "homepage": "https://github.com/MaskedMatters/Cactusbooks#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
