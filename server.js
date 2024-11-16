@@ -2,6 +2,9 @@
 let express = require('express');
 let app = express();
 
+let testInfo = {}
+let code = []
+
 // Express explode public folder as public and use Express built-in body parser
 app.use('/public', express.static('public'));
 app.use(express.urlencoded({ extended: true })); // This lets the post method work
@@ -38,9 +41,11 @@ app.get('/store', (req, res) => {
 })
 
 app.get('/start', (req, res) => {
-    let rand = Math.floor(Math.random() * 99999999) + 1;
-    let digitArray = Array.from(String(rand), Number);
-    res.render('pages/start', { digitArray })
+    for (i = 0; i < 8; i++) {
+        code.push(Math.floor(Math.random() * 10));
+    }
+
+    res.render('pages/start', { code })
 })
 
 app.listen(3000, () => {
