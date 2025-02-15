@@ -1,27 +1,14 @@
 {
-  "name": "securetestingtester",
-  "version": "1.0.0",
-  "description": "A cool thing that's cool and check the GitHub...",
-  "main": "index.js",
+  "name": "cactusbooks",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MaskedMatters/SecureTestingTester.git"
-  },
-  "author": "M. West",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MaskedMatters/SecureTestingTester/issues"
-  },
-  "homepage": "https://github.com/MaskedMatters/SecureTestingTester#readme",
   "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.21.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.7"
+    "astro": "^5.3.0"
   }
 }
